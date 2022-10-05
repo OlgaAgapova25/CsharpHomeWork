@@ -8,5 +8,9 @@
 Console.Clear();
 Console.Write("Print 3-digit number: ");
 int Number = int.Parse(Console.ReadLine());
+if (Number > 999 || Number < 100) Console.Write("error: check the number");
+else
+{
 int Symbol2 = Number / 10 % 10;
 Console.Write(Symbol2);
+}
