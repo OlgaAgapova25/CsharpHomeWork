@@ -27,8 +27,9 @@ void PrintArray(int[] array)
     int length = array.Length;
     while (index < length)
     {
-        Console.Write($"{array[index]}  ");
+        if (index == 0) Console.Write($"[{array[index]}, ");
+        else if (index == length - 1) Console.Write($"{array[index]}]");
+        else Console.Write($"{array[index]}, ");
         index++;
     }
-    Console.WriteLine();
 }
