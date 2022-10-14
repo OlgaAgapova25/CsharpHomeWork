@@ -3,7 +3,7 @@
 // 2, 4 -> 16
 
 Console.Clear();
-Console.WriteLine(Task25Result());
+Console.WriteLine(Task25Result(NumberInput(),DegreeInput()));
 
 double NumberInput ()
 {
@@ -19,10 +19,8 @@ int DegreeInput()
     return degree;
 }
 
-double Task25Result()
+double Task25Result(double number, int degree)
 {
-    double number = NumberInput();  
-    int degree = DegreeInput();
     double result = Math.Pow(number, degree); 
     return result;
 }
